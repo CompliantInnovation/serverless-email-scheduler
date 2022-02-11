@@ -4,6 +4,7 @@
   "description": "Schedule future emails with AWS Lambda and Step Functions",
   "main": "handler.js",
   "scripts": {
+    "remove": "sls remove -v",
     "deploy": "sls deploy -v",
     "invoke": "sls invoke -f ScheduleEmail -l -p ./data/task-request.json",
     "deployinvoke": "npm run deploy && npm run invoke",
